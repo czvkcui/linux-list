@@ -64,4 +64,7 @@ clean:
 	$(VECHO) "  Cleaning...\n"
 	$(Q)$(RM) $(TESTS) $(TESTS_OK) $(TESTS:=.o) $(TESTS:=.o.d)
 
+doc:
+	@doxygen
+
 -include $(deps)
